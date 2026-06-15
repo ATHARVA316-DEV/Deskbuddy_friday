@@ -28,10 +28,12 @@ The display module includes a built-in XPT2046 touch controller that shares the 
 | T_CS      | GPIO5     | Separate CS, activates touch IC independently |
 | T_IRQ     | GPIO35    | Touch interrupt (optional, input only) |
 
-*(Leave space below for connection schematic screenshot)*
+
 
 ---
-`[📸 Insert Schematic / Breadboard Screenshot Here]`
+<img width="1204" height="1600" alt="image" src="https://github.com/user-attachments/assets/e4bde3f6-dd2c-447a-9639-ba25c827d573" />
+<img width="1204" height="1600" alt="image" src="https://github.com/user-attachments/assets/73f77305-d031-4783-a1d7-08e273a9dd9c" />
+
 ---
 
 ## 🕹️ How to Use
@@ -51,12 +53,14 @@ The main menu features an "Arc Reactor" style circular layout.
 - **To navigate:** Swipe across the screen to smoothly rotate the outer app icons around the "FRIDAY Core".
 - **To select:** Tap on an app icon when you want to launch it. The app icon will glow and enlarge when tapped.
 
-*(Leave space below for UI screenshots)*
+
 
 ---
-`[📸 Insert Radial Menu Screenshot Here]`
+<img width="1204" height="1600" alt="image" src="https://github.com/user-attachments/assets/f3d69a77-152f-4357-9df6-9826700c0246" />
+
 ---
 
 ---
-`[📸 Insert App Interface Screenshot Here]`
+<img width="1600" height="1204" alt="image" src="https://github.com/user-attachments/assets/b74a977b-6476-4d23-9bbf-ad043ca620b3" />
+
 ---
