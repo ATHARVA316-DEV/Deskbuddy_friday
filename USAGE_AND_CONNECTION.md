@@ -17,10 +17,16 @@ This document outlines the hardware connections required to build FRIDAY and exp
 | LED     | 3.3V      |
 | SDO (MISO)| GPIO19  |
 
-### Additional Inputs
-- **Tactile Button #1**: [Insert Pin here]
-- **Tactile Button #2**: [Insert Pin here]
-- **Potentiometer**: [Insert Analog Pin here]
+### Touch Controls (XPT2046 Controller)
+The display module includes a built-in XPT2046 touch controller that shares the SPI bus with the TFT.
+
+| Touch Pin | ESP32 Pin | Description |
+|-----------|-----------|-------------|
+| T_CLK     | GPIO18    | Shares SCK with display |
+| T_DIN     | GPIO23    | Shares MOSI with display |
+| T_DO      | GPIO19    | Shares MISO with display |
+| T_CS      | GPIO5     | Separate CS, activates touch IC independently |
+| T_IRQ     | GPIO35    | Touch interrupt (optional, input only) |
 
 *(Leave space below for connection schematic screenshot)*
 
@@ -30,25 +36,20 @@ This document outlines the hardware connections required to build FRIDAY and exp
 
 ## 🕹️ How to Use
 
-FRIDAY is designed to be operated entirely without a keyboard, using only two buttons and one potentiometer.
+FRIDAY is designed to be operated entirely via its 2.4-inch Touch Screen, providing a sleek, buttonless experience.
 
 ### Control Scheme
 
-**Potentiometer (Rotary Selector):**
-- **Rotate Clockwise:** Navigate menu forward / down.
-- **Rotate Counterclockwise:** Navigate menu backward / up.
-
-**Button 1 (System / Power):**
-- **Short Press:** Sleep / Wake FRIDAY.
-- **Long Press:** Open Power Menu.
-
-**Button 2 (Action / Select):**
-- **Short Press:** Select / Confirm / Enter Application.
+**Touch Screen Interactions:**
+- **Tap:** Select an app, push a button, or confirm an action.
+- **Swipe / Drag:** Navigate through menus, scroll text, or spin the radial menu.
+- **Long Press:** Used for special actions like returning to the home screen or opening system menus.
 
 ### Main Radial Menu Navigation
 
-The main menu features an "Arc Reactor" style circular layout. As you turn the potentiometer, the outer icons will smoothly rotate around the center "FRIDAY Core". 
-To select an app, rotate until the desired app is highlighted (glowing and enlarged), then press **Button 2**.
+The main menu features an "Arc Reactor" style circular layout.
+- **To navigate:** Swipe across the screen to smoothly rotate the outer app icons around the "FRIDAY Core".
+- **To select:** Tap on an app icon when you want to launch it. The app icon will glow and enlarge when tapped.
 
 *(Leave space below for UI screenshots)*
 

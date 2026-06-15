@@ -19,7 +19,7 @@ FRIDAY is a futuristic, highly polished, Iron-Man-inspired desk companion that c
 - **DeskBuddy Mode**: Idle mode with motivational quotes, engineering jokes, and AI-like status updates.
 
 ## 🔌 Connection & Usage
-For detailed instructions on hardware connections (pinouts) and how to navigate the FRIDAY UI using the potentiometer and buttons, please see our dedicated guide:
+For detailed instructions on hardware connections (pinouts) and how to navigate the FRIDAY UI using the touch screen, please see our dedicated guide:
 
 👉 [**View the Connection & Usage Guide**](USAGE_AND_CONNECTION.md)
 
